@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beatriz Sanches | Consultora de Sneakers & Streetwear • TennisBar</title>
+  <meta name="description" content="Atendimento exclusivo e personalizado com Beatriz Sanches, consultora oficial TennisBar. Garanta os sneakers mais desejados (Nike, Adidas, New Balance, Vans, Jordan) com 100% de originalidade e entrega expressa.">
+  <meta name="keywords" content="TennisBar, Beatriz Sanches, Sneakers, Streetwear, Nike Dunk, Samba, Air Force 1, New Balance 550, Tênis Original">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Beatriz Sanches | Consultora de Sneakers • TennisBar">
+  <meta property="og:description" content="Encontre seu sneaker ideal com consultoria VIP, 100% originalidade e envio rápido para todo o Brasil.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Syne + Plus Jakarta Sans + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#ff5500',
+              orangeHover: '#e04a00',
+              cyan: '#00f0ff',
+              dark: '#08090c',
+              surface: '#111318',
+              card: '#161922',
+              cardHover: '#1c202c',
+              border: '#242938'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #08090c;
+      color: #f3f4f6;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .font-syne { font-family: 'Syne', sans-serif; }
+    .font-mono-num { font-family: 'Space Grotesk', monospace; }
+    
+    .glow-orange {
+      box-shadow: 0 0 40px -10px rgba(255, 85, 0, 0.4);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 35px -8px rgba(0, 240, 255, 0.35);
+    }
+    .glow-card:hover {
+      box-shadow: 0 10px 30px -10px rgba(255, 85, 0, 0.25);
+      border-color: rgba(255, 85, 0, 0.45);
+    }
+    
+    /* Background subtle grid */
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #08090c;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #242938;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff5500;
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-100 selection:bg-brand-orange selection:text-white">
+
+  <!-- BARRA DE ANÚNCIO TOPO -->
+  <div class="bg-gradient-to-r from-brand-orange via-red-600 to-brand-orange text-white text-xs font-mono font-bold tracking-wider py-2 px-4 text-center overflow-hidden">
+    <div class="flex items-center justify-center space-x-3">
+      <span class="animate-pulse">⚡</span>
+      <span>ATENDIMENTO EXCLUSIVO TENNISBAR • PARCELAMENTO EM ATÉ 12X • ENVIOS PARA TODO O BRASIL • 100% ORIGINAIS</span>
+      <span class="animate-pulse">⚡</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Brand Badge -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-orange to-red-600 flex items-center justify-center text-white font-syne font-extrabold text-xl shadow-lg glow-orange transition-transform group-hover:scale-105">
+          TB
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="font-syne font-extrabold text-lg sm:text-xl tracking-tight text-white group-hover:text-brand-orange transition-colors">TENNISBAR</span>
+            <span class="text-xs font-mono px-2 py-0.5 rounded-full bg-brand-orange/20 text-brand-orange border border-brand-orange/40 font-bold">VIP</span>
+          </div>
+          <p class="text-[11px] font-mono text-slate-400">Consultoria com Beatriz Sanches</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#vitrine" class="hover:text-brand-orange transition-colors">Drops & Vitrine</a>
+        <a href="#diferenciais" class="hover:text-brand-orange transition-colors">Diferenciais</a>
+        <a href="#como-funciona" class="hover:text-brand-orange transition-colors">Como Funciona</a>
+        <a href="#depoimentos" class="hover:text-brand-orange transition-colors">Depoimentos</a>
+        <a href="#faq" class="hover:text-brand-orange transition-colors">Dúvidas (FAQ)</a>
+      </nav>
+
+      <!-- CTA Topo -->
+      <div class="flex items-center space-x-3">
+        <a 
+          href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Vi%20seu%20cat%C3%A1logo%20da%20TennisBar%20e%20gostaria%20de%20consultoria%20para%20encontrar%20meu%20t%C3%AAnis." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center space-x-2 bg-brand-orange hover:bg-brand-orangeHover text-white px-4 sm:px-5 py-2.5 rounded-xl font-semibold text-xs sm:text-sm shadow-lg transition-all transform hover:-translate-y-0.5 glow-orange"
+        >
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.86.827 2.796.827 3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.478 9.981-9.969 9.981-1.748 0-3.385-.453-4.819-1.246l-7.212 1.892 1.928-7.042c-.878-1.488-1.378-3.226-1.378-5.085 0-5.503 4.478-9.981 9.969-9.981 5.491 0 9.981 4.478 9.981 9.981z"/>
+          </svg>
+          <span>Falar com a Bia</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-grid">
+    <!-- Efeitos de luz no fundo -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-brand-orange/15 blur-[130px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-brand-cyan/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Textos & Chamada -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Badge Exclusivo -->
+          <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-brand-surface border border-brand-border text-xs font-mono text-slate-300 mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="font-semibold text-white">Consultora Oficial TennisBar</span>
+            <span class="text-slate-600">•</span>
+            <span class="text-brand-orange font-bold">Atendimento VIP WhatsApp</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="font-syne font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-6xl tracking-tight leading-[1.08] mb-6">
+            O PAR PERFEITO <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-red-500 to-amber-400">
+              NO SEU TAMANHO.
+            </span><br>
+            SEM COMPLICAÇÃO.
+          </h1>
+
+          <!-- Parágrafo de Apresentação -->
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+            Olá, sou a <strong class="text-white font-semibold">Beatriz Sanches</strong>, consultora de estilo da <span class="text-brand-orange font-bold">TennisBar</span>. Te ajudo a encontrar e garantir aquele sneaker que você tanto procura — 
+            <strong class="text-white">Nike Dunk, Air Force 1, Samba, New Balance 550, Vans</strong> e lançamentos exclusivos — com 100% de garantia original e condições facilitadas.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+            <a 
+              href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Quero%20uma%20consultoria%20personalizada%20para%20encontrar%20meu%20t%C3%AAnis%20na%20TennisBar." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-brand-orange hover:bg-brand-orangeHover text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl transition-all transform hover:-translate-y-1 glow-orange"
+            >
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.86.827 2.796.827 3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.478 9.981-9.969 9.981-1.748 0-3.385-.453-4.819-1.246l-7.212 1.892 1.928-7.042c-.878-1.488-1.378-3.226-1.378-5.085 0-5.503 4.478-9.981 9.969-9.981 5.491 0 9.981 4.478 9.981 9.981z"/>
+              </svg>
+              <span>Consultar Estoque no WhatsApp</span>
+            </a>
+
+            <a 
+              href="#vitrine" 
+              class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-brand-surface hover:bg-brand-card text-slate-200 border border-brand-border px-7 py-4 rounded-xl font-semibold text-base transition-all"
+            >
+              <span>Explorar Vitrine</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Métricas de Confiança -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-brand-border text-center sm:text-left">
+            <div>
+              <p class="font-mono-num font-bold text-2xl sm:text-3xl text-white">+1.200</p>
+              <p class="text-xs text-slate-400 font-medium">Pares Entregues</p>
+            </div>
+            <div>
+              <p class="font-mono-num font-bold text-2xl sm:text-3xl text-brand-orange">100%</p>
+              <p class="text-xs text-slate-400 font-medium">Originais TennisBar</p>
+            </div>
+            <div>
+              <p class="font-mono-num font-bold text-2xl sm:text-3xl text-white">4.9/5</p>
+              <p class="text-xs text-slate-400 font-medium">Avaliações Clientes</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Showcase Visual (Sem foto pessoal, foco em Sneakers e Streetwear) -->
+        <div class="lg:col-span-5 relative">
+          
+          <!-- Card de Destaque Sneaker Hype -->
+          <div class="relative rounded-3xl bg-gradient-to-b from-brand-card to-brand-surface p-6 border border-brand-border shadow-2xl overflow-hidden glow-orange">
+            
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-brand-orange/20 text-brand-orange border border-brand-orange/40 text-xs font-mono font-bold">
+                <span>🔥 DROP DA SEMANA</span>
+              </span>
+              <span class="text-xs font-mono text-slate-400">Edição Hype</span>
+            </div>
+
+            <!-- Imagem de Tênis em Alta Resolução -->
+            <div class="relative w-full h-72 sm:h-80 rounded-2xl overflow-hidden mb-5 bg-slate-900 group">
+              <img 
+                src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" 
+                alt="Nike Dunk Low & Jordan Streetwear" 
+                class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
+                loading="eager"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80"></div>
+              
+              <!-- Tag flutuante na foto -->
+              <div class="absolute bottom-3 left-3 bg-brand-dark/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-brand-border text-xs font-mono text-slate-200">
+                Grade: 36 ao 44 • Pronta Entrega
+              </div>
+            </div>
+
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-brand-orange uppercase tracking-wider font-bold">Nike Streetwear</span>
+                <span class="text-xs text-emerald-400 font-mono">● Estoque Confirmado</span>
+              </div>
+              <h3 class="font-syne font-bold text-xl text-white">Nike Dunk Low Retro Series</h3>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                A silhueta que domina o streetwear mundial. Fale com a Bia para garantir a numeração ideal antes de esgotar.
+              </p>
+            </div>
+
+            <!-- Botão Pedir Esse Modelo -->
+            <a 
+              href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Gostaria%20de%20consultar%20a%20grade%20e%20disponibilidade%20do%20Nike%20Dunk%20Low%20na%20TennisBar." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-brand-orange to-red-600 hover:opacity-95 text-white py-3 rounded-xl font-bold text-sm shadow-md transition-all"
+            >
+              <span>Pedir Esse Modelo no WhatsApp</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+
+          </div>
+
+          <!-- Badge Flutuante de Autenticidade -->
+          <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-brand-surface/95 backdrop-blur-md p-4 rounded-2xl border border-brand-border shadow-xl flex items-center space-x-3.5">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold text-lg">
+              ✓
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white uppercase tracking-wider">Garantia TennisBar</p>
+              <p class="text-[11px] text-slate-400 font-mono">100% Autêntico na Caixa Oficial</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS OFICIAIS PARTNER BAR -->
+  <section class="border-y border-brand-border bg-brand-surface/60 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-xs font-mono uppercase tracking-widest text-slate-400 mb-4">
+        As maiores marcas mundiais à sua disposição com atendimento exclusivo
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-12 text-slate-300 font-syne font-extrabold text-lg sm:text-xl opacity-75">
+        <span class="hover:text-white transition-colors">NIKE</span>
+        <span class="text-brand-orange">•</span>
+        <span class="hover:text-white transition-colors">ADIDAS</span>
+        <span class="text-brand-orange">•</span>
+        <span class="hover:text-white transition-colors">JORDAN</span>
+        <span class="text-brand-orange">•</span>
+        <span class="hover:text-white transition-colors">NEW BALANCE</span>
+        <span class="text-brand-orange">•</span>
+        <span class="hover:text-white transition-colors">VANS</span>
+        <span class="text-brand-orange">•</span>
+        <span class="hover:text-white transition-colors">PUMA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VITRINE DE SNEAKERS EM DESTAQUE -->
+  <section id="vitrine" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-brand-orange px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30">
+        Catálogo Selecionado
+      </span>
+      <h2 class="font-syne font-extrabold text-3xl sm:text-4xl md:text-5xl text-white mt-4 mb-4">
+        SNEAKERS EM ALTA
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        Silhuetas clássicas, tendências globais e modelos mais pedidos. Clique para verificar seu tamanho e receber no conforto de casa.
+      </p>
+    </div>
+
+    <!-- Filtros de Marca & Busca Instantânea -->
+    <div class="mb-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- Botões de Filtro -->
+      <div class="flex flex-wrap items-center justify-center gap-2" id="filter-buttons">
+        <button onclick="filterBrand('all')" class="brand-btn active px-4 py-2 rounded-xl text-xs font-mono font-bold bg-brand-orange text-white transition-all shadow-md">
+          TODOS
+        </button>
+        <button onclick="filterBrand('nike')" class="brand-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-brand-surface hover:bg-brand-card text-slate-300 border border-brand-border transition-all">
+          NIKE
+        </button>
+        <button onclick="filterBrand('adidas')" class="brand-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-brand-surface hover:bg-brand-card text-slate-300 border border-brand-border transition-all">
+          ADIDAS
+        </button>
+        <button onclick="filterBrand('new-balance')" class="brand-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-brand-surface hover:bg-brand-card text-slate-300 border border-brand-border transition-all">
+          NEW BALANCE
+        </button>
+        <button onclick="filterBrand('jordan')" class="brand-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-brand-surface hover:bg-brand-card text-slate-300 border border-brand-border transition-all">
+          JORDAN
+        </button>
+        <button onclick="filterBrand('vans')" class="brand-btn px-4 py-2 rounded-xl text-xs font-mono font-bold bg-brand-surface hover:bg-brand-card text-slate-300 border border-brand-border transition-all">
+          VANS
+        </button>
+      </div>
+
+      <!-- Input de Busca -->
+      <div class="relative w-full md:w-72">
+        <input 
+          type="text" 
+          id="search-input" 
+          onkeyup="searchSneakers()" 
+          placeholder="Buscar tênis (ex: Samba, Dunk, 550)..."
+          class="w-full bg-brand-surface border border-brand-border rounded-xl px-4 py-2.5 pl-10 text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-brand-orange transition-colors"
+        >
+        <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- Grid de Tênis -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="sneaker-grid">
+
+      <!-- ITEM 1: Nike Dunk Low -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="nike" data-name="nike dunk low retro panda preto branco">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=600&q=80" 
+            alt="Nike Dunk Low" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-brand-orange text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+            🔥 Hype Mundial
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            35 ao 44
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">NIKE</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">Nike Dunk Low Retro</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">A silhueta mais procurada do streetwear. Versatilidade máxima para qualquer combinação.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Tenho%20interesse%20no%20*Nike%20Dunk%20Low%20Retro*.%20Poderia%20verificar%20meu%20tamanho?" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 2: Nike Air Force 1 '07 -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="nike" data-name="nike air force 1 07 triple white branco">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80" 
+            alt="Nike Air Force 1 '07" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-blue-600 text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+            ⭐ Clássico Atemporal
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            34 ao 45
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">NIKE</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">Air Force 1 '07 All White</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">O essencial que nunca sai de moda. Cabedal em couro legítimo e tecnologia Nike Air.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Quero%20garantir%20meu%20*Nike%20Air%20Force%201%20All%20White*.%20Tem%20minha%20numera%C3%A7%C3%A3o?" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 3: Adidas Samba OG -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="adidas" data-name="adidas samba og white black goma">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=600&q=80" 
+            alt="Adidas Samba OG" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-amber-500 text-black text-[10px] font-mono font-bold uppercase tracking-wider">
+            ⚡ Fenômeno Global
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            35 ao 43
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">ADIDAS ORIGINALS</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">Adidas Samba OG</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">O queridinho do streetwear e fashion icons. Solado em borracha goma e biqueira T-toe em camurça.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Estou%20procurando%20o%20*Adidas%20Samba%20OG*.%20Quais%20tamanhos%20est%C3%A3o%20dispon%C3%ADveis?" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 4: New Balance 550 -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="new-balance" data-name="new balance 550 sea salt white grey vintage">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=600&q=80" 
+            alt="New Balance 550" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-emerald-600 text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+            🏀 Vintage 80s
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            37 ao 44
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">NEW BALANCE</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">New Balance 550 Retro</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">Herança das quadras de basquete dos anos 80. Conforto absurdo e elegância retrô.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Gostaria%20de%20consultar%20o%20*New%20Balance%20550*.%20Tem%20no%20meu%20n%C3%BAmero?" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 5: Air Jordan 1 Low / High -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="jordan" data-name="air jordan 1 retro low high chicago bred">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=600&q=80" 
+            alt="Air Jordan 1" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-red-600 text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+            👑 Ícone Lendário
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            36 ao 44
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">JORDAN BRAND</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">Air Jordan 1 Retro</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">O modelo que deu início à cultura sneakerhead. Couro premium e história pura.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Gostaria%20de%20saber%20sobre%20a%20disponibilidade%20do%20*Air%20Jordan%201*." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 6: Adidas Gazelle Indoor -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="adidas" data-name="adidas gazelle indoor suede camurca cores">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=600&q=80" 
+            alt="Adidas Gazelle" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-purple-600 text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+            ✨ Trend Streetwear
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            35 ao 42
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">ADIDAS ORIGINALS</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">Adidas Gazelle Indoor</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">Camurça aveludada premium e sola translúcida. O sneaker mais charmoso para looks casuais.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Procuro%20o%20*Adidas%20Gazelle%20Indoor*.%20Quais%20cores%20e%20tamanhos%20voc%C3%AA%20tem?" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 7: Vans Old Skool -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="vans" data-name="vans old skool skate preto branco sidestripe">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80" 
+            alt="Vans Old Skool" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-stone-700 text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+            🛹 Skate & Lifestyle
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            34 ao 44
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">VANS</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">Vans Old Skool Classic</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">A lendária sidestripe com lona resistente e solado Waffle de borracha vulcanizada.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Gostaria%20de%20pedir%20o%20*Vans%20Old%20Skool*.%20Tem%20minha%20numera%C3%A7%C3%A3o?" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- ITEM 8: New Balance 9060 / Hype Tech -->
+      <div class="sneaker-card group rounded-2xl bg-brand-card border border-brand-border p-4 transition-all duration-300 glow-card" data-brand="new-balance" data-name="new balance 9060 1906 chunky tech futurista">
+        <div class="relative h-60 w-full rounded-xl overflow-hidden bg-slate-900 mb-4">
+          <img 
+            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80" 
+            alt="New Balance Streetwear" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-cyan-600 text-white text-[10px] font-mono font-bold uppercase tracking-wider">
+            🚀 Y2K Futurista
+          </span>
+          <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-brand-dark/80 backdrop-blur-sm text-[10px] font-mono text-slate-300">
+            36 ao 43
+          </span>
+        </div>
+        <div class="space-y-2 mb-4">
+          <span class="text-[11px] font-mono uppercase text-slate-400 font-bold">NEW BALANCE</span>
+          <h3 class="font-syne font-bold text-lg text-white group-hover:text-brand-orange transition-colors">New Balance 9060 Series</h3>
+          <p class="text-xs text-slate-300 line-clamp-2">Design arrojado com amortecimento ABZORB e estética maximalista que dominou a moda.</p>
+        </div>
+        <div class="pt-2 border-t border-brand-border/60 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] text-slate-400 font-mono block">Condição Especial</span>
+            <span class="text-xs font-mono font-bold text-white">Consulte Tamanho</span>
+          </div>
+          <a 
+            href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Procuro%20o%20*New%20Balance%209060*.%20Quais%20cores%20est%C3%A3o%20dispon%C3%ADveis?" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-brand-orange hover:bg-brand-orangeHover text-white text-xs font-bold transition-all shadow-md"
+          >
+            <span>Pedir no Zap</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Banner "Não achou seu modelo?" -->
+    <div class="mt-12 rounded-3xl bg-gradient-to-r from-brand-surface via-brand-card to-brand-surface border border-brand-border p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+      <div class="space-y-2 text-center md:text-left">
+        <span class="text-xs font-mono font-bold text-brand-orange uppercase tracking-wider">Serviço de Busca Personalizada</span>
+        <h3 class="font-syne font-bold text-2xl sm:text-3xl text-white">Não encontrou o modelo ou a cor que procura?</h3>
+        <p class="text-sm text-slate-300 max-w-xl">
+          A Bia consulta o estoque de toda a rede TennisBar e localiza aquele par raro ou edição especial para você. Basta enviar a foto!
+        </p>
+      </div>
+      <a 
+        href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Estou%20procurando%20um%20modelo%20espec%C3%ADfico%20que%20n%C3%A3o%20achei%20na%20vitrine.%20Posso%20te%20mandar%20a%20foto?" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center space-x-2 bg-brand-orange hover:bg-brand-orangeHover text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg whitespace-nowrap transition-all glow-orange"
+      >
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.86.827 2.796.827 3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.478 9.981-9.969 9.981-1.748 0-3.385-.453-4.819-1.246l-7.212 1.892 1.928-7.042c-.878-1.488-1.378-3.226-1.378-5.085 0-5.503 4.478-9.981 9.969-9.981 5.491 0 9.981 4.478 9.981 9.981z"/></svg>
+        <span>Mandar Foto no WhatsApp</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- DIFERENCIAIS DA CONSULTORIA VIP -->
+  <section id="diferenciais" class="py-20 bg-brand-surface/70 border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold uppercase tracking-wider text-brand-orange px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30">
+          Por Que Comprar com a Bia?
+        </span>
+        <h2 class="font-syne font-extrabold text-3xl sm:text-4xl md:text-5xl text-white mt-4 mb-4">
+          A EXPERIÊNCIA TENNISBAR VIP
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Comprar com uma consultora dedicada é totalmente diferente de comprar em e-commerces comuns. Veja o que você ganha:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- CARD 1 -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4 hover:border-brand-orange/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-brand-orange/20 border border-brand-orange/40 flex items-center justify-center text-brand-orange font-bold text-2xl">
+            🛡️
+          </div>
+          <h3 class="font-syne font-bold text-lg text-white">100% Autêntico & Original</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Todos os pares são adquiridos diretamente com os distribuidores oficiais da TennisBar. Acompanha nota fiscal e caixa original lacrada.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4 hover:border-brand-orange/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-500/40 flex items-center justify-center text-blue-400 font-bold text-2xl">
+            📏
+          </div>
+          <h3 class="font-syne font-bold text-lg text-white">Consultoria de Tamanho</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Cada marca tem uma fôrma específica (Dunk é mais justo, AF1 veste maior). A Bia analisa seu formato de pé para você acertar de primeira.
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4 hover:border-brand-orange/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold text-2xl">
+            📦
+          </div>
+          <h3 class="font-syne font-bold text-lg text-white">Envio Seguro Double Box</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Seu tênis viaja em caixa dupla reforçada com plástico bolha e seguro contra extravios. O par chega perfeito sem nenhum amassado na caixa.
+          </p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4 hover:border-brand-orange/40 transition-colors">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 font-bold text-2xl">
+            ⚡
+          </div>
+          <h3 class="font-syne font-bold text-lg text-white">Acesso Antecipado a Drops</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Clientes VIP da Bia recebem notificações antecipadas quando pares disputados chegam ao estoque, antes mesmo de irem para as vitrines gerais.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GUIA DE TAMANHOS INTERATIVO -->
+  <section class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="rounded-3xl bg-brand-card border border-brand-border p-8 md:p-12 shadow-2xl">
+      <div class="max-w-2xl mx-auto text-center mb-8">
+        <span class="text-xs font-mono font-bold text-brand-orange uppercase tracking-wider">Ferramenta Rápida</span>
+        <h3 class="font-syne font-bold text-2xl sm:text-3xl text-white mt-2">Guia Prático de Fôrma por Marca</h3>
+        <p class="text-xs sm:text-sm text-slate-300 mt-2">
+          Selecione a silhueta que deseja e confira a recomendação de fôrma indicada pela Bia:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6" id="size-brand-selectors">
+        <button onclick="selectSizeGuide('dunk')" class="size-tab active py-3 px-4 rounded-xl border border-brand-orange bg-brand-orange/10 text-white font-mono text-xs font-bold transition-all text-center">
+          Nike Dunk Low
+        </button>
+        <button onclick="selectSizeGuide('af1')" class="size-tab py-3 px-4 rounded-xl border border-brand-border bg-brand-surface text-slate-400 font-mono text-xs font-bold transition-all text-center">
+          Air Force 1
+        </button>
+        <button onclick="selectSizeGuide('samba')" class="size-tab py-3 px-4 rounded-xl border border-brand-border bg-brand-surface text-slate-400 font-mono text-xs font-bold transition-all text-center">
+          Adidas Samba
+        </button>
+        <button onclick="selectSizeGuide('nb550')" class="size-tab py-3 px-4 rounded-xl border border-brand-border bg-brand-surface text-slate-400 font-mono text-xs font-bold transition-all text-center">
+          New Balance 550
+        </button>
+      </div>
+
+      <!-- Caixa de Resposta da Fôrma -->
+      <div id="size-guide-result" class="p-5 rounded-2xl bg-brand-surface border border-brand-border text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono text-brand-orange font-bold uppercase tracking-wider block" id="sg-title">FÔRMA DO NIKE DUNK LOW</span>
+          <p class="text-sm text-white font-medium mt-1" id="sg-desc">
+            Recomendação: <strong>True to Size (seu número habitual)</strong>. Se você tiver pé muito largo no peito do pé, sugerimos meio ponto acima para conforto ideal.
+          </p>
+        </div>
+        <a 
+          id="sg-btn"
+          href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Estou%20em%20d%C3%BAvida%20sobre%20meu%20tamanho%20no%20Nike%20Dunk%20Low." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-brand-surface hover:bg-brand-card text-brand-orange border border-brand-orange/40 text-xs font-bold whitespace-nowrap transition-colors"
+        >
+          <span>Tirar Dúvida com a Bia</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA O ATENDIMENTO -->
+  <section id="como-funciona" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-brand-orange px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30">
+        Simples e Seguro
+      </span>
+      <h2 class="font-syne font-extrabold text-3xl sm:text-4xl md:text-5xl text-white mt-4 mb-4">
+        COMO FUNCIONA SEU PEDIDO
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        Três passos rápidos para garantir seu par autêntico sem estresse:
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+      
+      <!-- Passo 1 -->
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border space-y-4 relative">
+        <span class="font-mono-num font-extrabold text-5xl text-brand-border">01</span>
+        <h3 class="font-syne font-bold text-xl text-white">Envie sua Escolha</h3>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Escolha um modelo da vitrine ou mande uma foto/nome do sneaker que você procura para a Bia no WhatsApp.
+        </p>
+      </div>
+
+      <!-- Passo 2 -->
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border space-y-4 relative">
+        <span class="font-mono-num font-extrabold text-5xl text-brand-orange">02</span>
+        <h3 class="font-syne font-bold text-xl text-white">Consultoria & Reserva</h3>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          A Bia confere o estoque em tempo real, orienta sobre o caimento ideal no seu pé e reserva seu par oficial.
+        </p>
+      </div>
+
+      <!-- Passo 3 -->
+      <div class="p-8 rounded-2xl bg-brand-card border border-brand-border space-y-4 relative">
+        <span class="font-mono-num font-extrabold text-5xl text-brand-cyan">03</span>
+        <h3 class="font-syne font-bold text-xl text-white">Pagamento & Envio</h3>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          Pague com segurança (Pix com desconto ou cartão até 12x) e receba seu rastreio para acompanhar cada etapa até a entrega.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-12">
+      <a 
+        href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Gostaria%20de%20iniciar%20meu%20atendimento%20para%20comprar%20um%20sneaker." 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center space-x-3 bg-brand-orange hover:bg-brand-orangeHover text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl transition-all glow-orange"
+      >
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.86.827 2.796.827 3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.478 9.981-9.969 9.981-1.748 0-3.385-.453-4.819-1.246l-7.212 1.892 1.928-7.042c-.878-1.488-1.378-3.226-1.378-5.085 0-5.503 4.478-9.981 9.969-9.981 5.491 0 9.981 4.478 9.981 9.981z"/></svg>
+        <span>Iniciar Atendimento Agora</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- DEPOIMENTOS DE CLIENTES -->
+  <section id="depoimentos" class="py-20 bg-brand-surface/60 border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono font-bold uppercase tracking-wider text-brand-orange px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30">
+          Prova Social
+        </span>
+        <h2 class="font-syne font-extrabold text-3xl sm:text-4xl md:text-5xl text-white mt-4 mb-4">
+          QUEM COMPROU, RECOMENDA
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Mais de 1.200 clientes atendidos com nota média de 4.9 estrelas. Veja alguns relatos:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- DEPOIMENTO 1 -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4">
+          <div class="flex items-center space-x-1 text-amber-400 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic">
+            "A Bia me salvou! Estava procurando o Adidas Samba OG no meu número há semanas e sempre dava esgotado nas lojas. Falei com ela pelo WhatsApp e em menos de 24h o pedido foi despachado. Chegou duplo box impecável!"
+          </p>
+          <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-white text-xs">Lucas Meirelles</p>
+              <p class="text-[11px] text-slate-400 font-mono">São Paulo, SP</p>
+            </div>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Compra Verificada</span>
+          </div>
+        </div>
+
+        <!-- DEPOIMENTO 2 -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4">
+          <div class="flex items-center space-x-1 text-amber-400 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic">
+            "Primeira vez comprando com consultoria personalizada e nunca mais compro em site convencional. A Bia me avisou que a fôrma do Dunk era justa e me recomendou pegar o 41. Se pegasse o 40 ia apertar. Ficou perfeito no pé!"
+          </p>
+          <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-white text-xs">Camila Fontana</p>
+              <p class="text-[11px] text-slate-400 font-mono">Curitiba, PR</p>
+            </div>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Compra Verificada</span>
+          </div>
+        </div>
+
+        <!-- DEPOIMENTO 3 -->
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border space-y-4">
+          <div class="flex items-center space-x-1 text-amber-400 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed italic">
+            "Atendimento nota dez. Peguei o New Balance 550 que era meu sonho. Chegou super rápido no Rio de Janeiro, com nota fiscal e caixa perfeita. Confiança total na Bia e na TennisBar!"
+          </p>
+          <div class="pt-4 border-t border-brand-border/60 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-white text-xs">Matheus Rocha</p>
+              <p class="text-[11px] text-slate-400 font-mono">Rio de Janeiro, RJ</p>
+            </div>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Compra Verificada</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ (ACCORDION INTERATIVO) -->
+  <section id="faq" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-mono font-bold uppercase tracking-wider text-brand-orange px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30">
+        Perguntas Frequentes
+      </span>
+      <h2 class="font-syne font-extrabold text-3xl sm:text-4xl text-white mt-4 mb-4">
+        DÚVIDAS FREQUENTES
+      </h2>
+      <p class="text-slate-300 text-sm">
+        Tudo o que você precisa saber sobre a autenticidade, envio e garantia.
+      </p>
+    </div>
+
+    <div class="space-y-4" id="faq-accordion">
+      
+      <!-- FAQ 1 -->
+      <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+        <button onclick="toggleFaq(1)" class="w-full p-5 text-left flex items-center justify-between focus:outline-none">
+          <span class="font-syne font-bold text-base text-white">Os tênis são 100% originais e legítimos?</span>
+          <span id="faq-icon-1" class="text-brand-orange text-xl font-bold transition-transform">+</span>
+        </button>
+        <div id="faq-content-1" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          Sim, 100% autênticos e lacrados. Todos os calçados vêm dos canais oficiais da rede TennisBar com nota fiscal oficial, caixa original da marca e garantia total do fabricante.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+        <button onclick="toggleFaq(2)" class="w-full p-5 text-left flex items-center justify-between focus:outline-none">
+          <span class="font-syne font-bold text-base text-white">Quais são as formas de pagamento aceitas?</span>
+          <span id="faq-icon-2" class="text-brand-orange text-xl font-bold transition-transform">+</span>
+        </button>
+        <div id="faq-content-2" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          Aceitamos pagamento via Pix (com condições e descontos especiais) ou cartão de crédito em até 12x através de link de pagamento criptografado e seguro da TennisBar.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+        <button onclick="toggleFaq(3)" class="w-full p-5 text-left flex items-center justify-between focus:outline-none">
+          <span class="font-syne font-bold text-base text-white">Como funciona o envio e o prazo de entrega?</span>
+          <span id="faq-icon-3" class="text-brand-orange text-xl font-bold transition-transform">+</span>
+        </button>
+        <div id="faq-content-3" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          Enviamos para todo o Brasil via Sedex ou Transportadora Expressa. Todos os pedidos são embalados em caixa dupla reforçada (Double Box) e possuem código de rastreamento enviado diretamente no seu WhatsApp logo após o despacho.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+        <button onclick="toggleFaq(4)" class="w-full p-5 text-left flex items-center justify-between focus:outline-none">
+          <span class="font-syne font-bold text-base text-white">Se o tamanho não der certo, posso trocar?</span>
+          <span id="faq-icon-4" class="text-brand-orange text-xl font-bold transition-transform">+</span>
+        </button>
+        <div id="faq-content-4" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          Com certeza! Garantimos a troca por numeração de acordo com a política oficial TennisBar e Código de Defesa do Consumidor, contanto que o calçado não apresente marcas de uso e esteja na caixa original.
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+        <button onclick="toggleFaq(5)" class="w-full p-5 text-left flex items-center justify-between focus:outline-none">
+          <span class="font-syne font-bold text-base text-white">Posso retirar em alguma loja física?</span>
+          <span id="faq-icon-5" class="text-brand-orange text-xl font-bold transition-transform">+</span>
+        </button>
+        <div id="faq-content-5" class="hidden p-5 pt-0 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-brand-border/40">
+          Sim! Consulte com a Bia a disponibilidade da loja física TennisBar mais próxima da sua região para combinar a retirada do seu par reservado.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-20 relative overflow-hidden bg-gradient-to-b from-brand-surface to-brand-dark border-t border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <div class="w-16 h-16 rounded-2xl bg-brand-orange/20 border border-brand-orange/40 flex items-center justify-center text-brand-orange text-3xl mx-auto mb-6">
+        👟
+      </div>
+
+      <h2 class="font-syne font-extrabold text-3xl sm:text-4xl md:text-5xl text-white mb-6">
+        PRONTO PARA GARANTIR SEU NOVO SNEAKER?
+      </h2>
+      
+      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-8">
+        Fale diretamente com a Bia agora mesmo e receba um atendimento sob medida com condições especiais TennisBar.
+      </p>
+
+      <a 
+        href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Vi%20seu%20site%20da%20TennisBar%20e%20quero%20escolher%20meu%20novo%20t%C3%AAnis." 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center space-x-3 bg-brand-orange hover:bg-brand-orangeHover text-white px-9 py-4 rounded-xl font-bold text-base shadow-2xl transition-all transform hover:-translate-y-1 glow-orange"
+      >
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.86.827 2.796.827 3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.478 9.981-9.969 9.981-1.748 0-3.385-.453-4.819-1.246l-7.212 1.892 1.928-7.042c-.878-1.488-1.378-3.226-1.378-5.085 0-5.503 4.478-9.981 9.969-9.981 5.491 0 9.981 4.478 9.981 9.981z"/></svg>
+        <span>Chamar a Bia no WhatsApp</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-brand-border py-12 text-slate-400 text-xs font-mono">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center space-x-3">
+        <div class="w-8 h-8 rounded-lg bg-brand-orange flex items-center justify-center text-white font-syne font-bold text-sm">
+          TB
+        </div>
+        <div>
+          <span class="text-white font-syne font-bold text-sm block">TENNISBAR • BEATRIZ SANCHES</span>
+          <span class="text-[11px] text-slate-400">Consultoria de Estilo e Sneakers Streetwear</span>
+        </div>
+      </div>
+
+      <div class="text-center sm:text-right text-[11px] text-slate-400 space-y-1">
+        <p>© 2026 TennisBar. Todos os direitos reservados.</p>
+        <p>Produtos 100% autênticos com nota fiscal e garantia oficial.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP (FIXO NO CANTO INFERIOR DIREITO) -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center space-x-3">
+    <!-- Tooltip convidativo -->
+    <div class="hidden sm:flex items-center bg-brand-card/95 backdrop-blur-md border border-brand-border text-white text-xs font-medium px-3.5 py-2 rounded-xl shadow-2xl">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-ping"></span>
+      <span>Bia online no WhatsApp</span>
+    </div>
+
+    <!-- Botão com pulso -->
+    <a 
+      href="https://wa.me/5512982991954?text=Ol%C3%A1%20Bia!%20Vi%20seu%20cat%C3%A1logo%20e%20gostaria%20de%20atendimento%20personalizado." 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Falar com Beatriz Sanches no WhatsApp"
+      class="w-14 h-14 rounded-2xl bg-brand-orange hover:bg-brand-orangeHover text-white flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 glow-orange"
+    >
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.86.827 2.796.827 3.182 0 5.768-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.478 9.981-9.969 9.981-1.748 0-3.385-.453-4.819-1.246l-7.212 1.892 1.928-7.042c-.878-1.488-1.378-3.226-1.378-5.085 0-5.503 4.478-9.981 9.969-9.981 5.491 0 9.981 4.478 9.981 9.981z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT: FILTRO, BUSCA, FAQ E GUIA DE TAMANHO -->
+  <script>
+    // Filtro por Marca
+    function filterBrand(brand) {
+      const cards = document.querySelectorAll('.sneaker-card');
+      const buttons = document.querySelectorAll('.brand-btn');
+      
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brand-orange', 'text-white', 'active');
+        btn.classList.add('bg-brand-surface', 'text-slate-300');
+      });
+
+      // Highlight active button
+      event.currentTarget.classList.add('bg-brand-orange', 'text-white', 'active');
+      event.currentTarget.classList.remove('bg-brand-surface', 'text-slate-300');
+
+      cards.forEach(card => {
+        if (brand === 'all' || card.getAttribute('data-brand') === brand) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Busca Dinâmica
+    function searchSneakers() {
+      const query = document.getElementById('search-input').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.sneaker-card');
+
+      cards.forEach(card => {
+        const name = card.getAttribute('data-name');
+        if (name.includes(query)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // FAQ Accordion
+    function toggleFaq(id) {
+      const content = document.getElementById(`faq-content-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    // Guia de Tamanho Interativo
+    const sizeData = {
+      dunk: {
+        title: "FÔRMA DO NIKE DUNK LOW",
+        desc: "Recomendação: True to Size (seu número normal). Se seu pé for largo no peito do pé, meio ponto acima garante conforto extra.",
+        msg: "Ol%C3%A1%20Bia!%20Gostaria%20de%20ajuda%20para%20escolher%20meu%20tamanho%20no%20Nike%20Dunk%20Low."
+      },
+      af1: {
+        title: "FÔRMA DO NIKE AIR FORCE 1",
+        desc: "Recomendação: Fôrma generosa/ampla. Muitos clientes preferem comprar meio número ou um número abaixo se preferirem o calçado bem justo.",
+        msg: "Ol%C3%A1%20Bia!%20Qual%20tamanho%20voc%C3%AA%20recomenda%20para%20o%20Air%20Force%201%20no%20meu%20caso?"
+      },
+      samba: {
+        title: "FÔRMA DO ADIDAS SAMBA OG",
+        desc: "Recomendação: Silhueta baixa e bico mais afilado. Recomendamos comprar seu tamanho padrão ou meio número acima se tiver pé largo.",
+        msg: "Ol%C3%A1%20Bia!%20Quero%20comprar%20o%20Adidas%20Samba%20OG%20mas%20estou%20em%20d%C3%BAvida%20do%20tamanho."
+      },
+      nb550: {
+        title: "FÔRMA DO NEW BALANCE 550",
+        desc: "Recomendação: True to Size com ótimo suporte no calcanhar. Cabedal firme nos primeiros usos que laceia perfeitamente.",
+        msg: "Ol%C3%A1%20Bia!%20Pode%20me%20ajudar%20a%20acertar%20a%20numera%C3%A7%C3%A3o%20do%20New%20Balance%20550?"
+      }
+    };
+
+    function selectSizeGuide(key) {
+      const data = sizeData[key];
+      if (!data) return;
+
+      document.querySelectorAll('.size-tab').forEach(t => {
+        t.classList.remove('border-brand-orange', 'bg-brand-orange/10', 'text-white', 'active');
+        t.classList.add('border-brand-border', 'bg-brand-surface', 'text-slate-400');
+      });
+
+      event.currentTarget.classList.add('border-brand-orange', 'bg-brand-orange/10', 'text-white', 'active');
+      event.currentTarget.classList.remove('border-brand-border', 'bg-brand-surface', 'text-slate-400');
+
+      document.getElementById('sg-title').textContent = data.title;
+      document.getElementById('sg-desc').innerHTML = `Recomendação: <strong>${data.desc}</strong>`;
+      document.getElementById('sg-btn').href = `https://wa.me/5512982991954?text=${data.msg}`;
+    }
+  </script>
+</body>
+</html>
